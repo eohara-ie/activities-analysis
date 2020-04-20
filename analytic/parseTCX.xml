@@ -1,0 +1,33 @@
+<analytic>
+	<analytic>parseTCX</analytic>
+	<code_text>\d .aa
+
+\P 20 // High number of significant figures in AltitudeMeters column
+CURRENT_DIR:system"dir" //! Windows-only. To include OS check before this point
+system"cd C:\\Users\\eohara\\Documents\\fitbit" //! Windows-only
+
+transform:{[fileName] //! symbol
+    parsedFile0:.xml.rdXML[read0`$":",string fileName];
+
+    telemetry:first value first((enlist first first last first parsedFile0)`Lap)`Track;
+    /""vs ' telemetry`Time
+    /update Time:
+    /update "F"$AltitudeMeters,"F"$DistanceMeters,"T"$Time from `telemetry;
+
+    /exec HeartRateBpm from telemetry
+    show distinct -6#'telemetry`Time; // Write timezone offsets(or end of datetime if no offest) in file to console.
+    telemetry
+    };
+
+</code_text>
+	<description></description>
+	<dictionaryparams>0</dictionaryparams>
+	<typ>Instruction</typ>
+	<private>1</private>
+	<returntype></returntype>
+	<returndata></returndata>
+	<defaultconnection></defaultconnection>
+	<alias></alias>
+	<analytictype>polling</analytictype>
+	<returndescription></returndescription>
+</analytic>
