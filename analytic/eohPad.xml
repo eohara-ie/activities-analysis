@@ -1,0 +1,20 @@
+<analytic>
+	<analytic>eohPad</analytic>
+	<code_text>.eoh.s2:"T"vs "2019-01-15T12:17:09.000-05:00"; //! Dummy
+.eoh.s2[1]:ssr[.eoh.s2[1];"-";" -"];
+.eoh.s2[1]:.eoh.s2[1] _ 3+first ss[.eoh.s2[1];"-??:"];
+
+.eoh.s2:" " sv .eoh.s2;
+
+.qdate.resolveAs[`timestamp; "%F %T %z"] .eoh.s2 //! Not including timezone shift</code_text>
+	<description></description>
+	<dictionaryparams>0</dictionaryparams>
+	<typ>Instruction</typ>
+	<private>1</private>
+	<returntype></returntype>
+	<returndata></returndata>
+	<defaultconnection></defaultconnection>
+	<alias></alias>
+	<analytictype>polling</analytictype>
+	<returndescription></returndescription>
+</analytic>

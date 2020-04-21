@@ -6,8 +6,18 @@
 CURRENT_DIR:system"dir" //! Windows-only. To include OS check before this point
 system"cd C:\\Users\\eohara\\Documents\\fitbit" //! Windows-only
 
-transform:{[fileName] //! symbol
-    parsedFile0:.xml.rdXML[read0`$":",string fileName];
+
+//
+// @desc Parses a TCX file.
+//
+// @param fName        {symbol}  TCX file name.
+//
+// @example .aa.transform[`exercise_tcx_file_5.tcx]
+//
+// @return Telemetry data.
+//
+transform:{[fName] //! symbol
+    parsedFile0:.xml.rdXML[read0`$":",string fName];
 
     telemetry:first value first((enlist first first last first parsedFile0)`Lap)`Track;
     /""vs ' telemetry`Time
