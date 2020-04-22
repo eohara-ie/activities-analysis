@@ -12,22 +12,53 @@ system"cd C:\\Users\\eohara\\Documents\\fitbit" //! Windows-only
 //
 // @param fName        {symbol}  TCX file name.
 //
-// @example .aa.transform[`exercise_tcx_file_5.tcx]
-//
 // @return Telemetry data.
+//
+// @example .aa.transform[`exercise_tcx_file_5.tcx]
 //
 transform:{[fName] //! symbol
     parsedFile0:.xml.rdXML[read0`$":",string fName];
 
     telemetry:first value first((enlist first first last first parsedFile0)`Lap)`Track;
-    /""vs ' telemetry`Time
-    /update Time:
-    /update "F"$AltitudeMeters,"F"$DistanceMeters,"T"$Time from `telemetry;
-
-    /exec HeartRateBpm from telemetry
-    show distinct -6#'telemetry`Time; // Write timezone offsets(or end of datetime if no offest) in file to console.
+    telemetry:update "F"$AltitudeMeters,"F"$DistanceMeters,Time:{.aa.parseStringToTS x}each Time from telemetry;
+    
     telemetry
     };
+
+
+//
+// @desc Parses a stringed timestamp from a TCX file. Will throw an error if format does not match one of the examples below.
+//
+// @param str   {string}        Stringed timestamp.
+//
+// @return     {timestamp}     Parsed timestamp.
+//
+// @example     q).aa.parseStringToTS each("2019-01-15T12:17:09.000-05:00";"2019-01-15T12:17:09.000+05:00";"2019-01-15T12:17:09.000Z")
+//              2019.01.15D17:17:09.000000000 2019.01.15D07:17:09.000000000 2019.01.15D12:17:09.000000000
+//
+parseStringToTS:{[str]
+
+    //decimal:str(last where "."=str)+til 4; //~ May add this to the timestamp value after parsing, but seems to be always ".000", so not needed
+    s:ssr[str;".000";""]; // Have to cut off this as date parser expects HH:MM:SS format for time
+    s:ssr[s;"T";" "];
+    
+    $["Z"=last str; // No offset
+        [s:-1 _ s;
+            .qdate.resolve["%F %T"] s
+            ];
+        "+"in str; // Positive offset
+        [s _:last where ":"=s;
+            s:" "sv last[where "+"=s]cut s;
+            .qdate.resolveAs[`timestamp; "%F %T %z"] s
+            ];
+        3=count where "-"=str; // Negative offset
+        [s _:last where ":"=s;
+            s:" "sv last[where "-"=s]cut s;
+            .qdate.resolveAs[`timestamp; "%F %T %z"] s];
+        '"Unknown timestamp format"
+        ]
+    };
+
 
 </code_text>
 	<description></description>
