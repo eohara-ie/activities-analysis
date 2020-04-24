@@ -1,0 +1,337 @@
+<configparam>
+	<ucname>delta_install_default</ucname>
+	<override>activitiesAnalysis</override>
+	<parameter>kxsProcess</parameter>
+	<description>This configuration parameter stores the process wide level configurations, including how to initialize and receive data, what to publish and subscribe to, how to react to EOX events, and where to store in memory tables.
+
+In any package the top row can be left blank in the Process column to define new global defaults at the package level. 
+
+Property:			Description:
+Process 			The process name for configuration		
+Parent 				Rows above to use as base configuration	
+SvcClass			Service class of the process
+Node 				Node of the process in HA system 
+Analytics			Analytics/Analytic groups to load into process		
+Libraries			Instructions to load into process, in order		
+Init 					Initialization functions to execute in order		
+Pub 				Channels and tables to publish
+Sub 				Channels and table subscribed to		
+Load 				List of non-subscription tables to keep in memory		
+Shutdown 			List of functions to run on shutdown  //~ Future?
+MdbNS 			Namespace to keep in-memory tables in
+MountNS 			Where to mount database
+DestroyMountNS	Boolean denoting whether to keep database mounted
+Rcv 				Defines the realtime upd function for the process
+RcvM 				Defines the realtime multi 
+Eoia 				Function  to run at the end of “end of interval” signal from TP		
+Eoiz 				Function to run at the end of “end of interval” signal from DBW		
+Eopa 				Function to run at the start of EOP signal from TP
+Eopz 				Function to run at end to EOP finish signal	from DBW
+Eoda 				Function to run at the end of EOD start signal from TP
+Eodz 				Function to run at the end of EOD finish signal from DBW
+DbwSync 			Whether DBW should send signals synchronously
+Critical				Whether DBW should delay EOD while this process is down  //! NYI and may no longer be needed 
+Comment 			Used to comment on configuration row 		
+</description>
+	<validationAnalytic></validationAnalytic>
+	<param>
+		<index>0</index>
+		<element>Process</element>
+		<elementType>String</elementType>
+		<elementValue>&lt;default&gt;</elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Parent</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>SvcClass</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Node</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Analytics</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Libraries</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Init</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Pub</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Sub</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Load</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>MdbNS</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>MountNS</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>DestroyMountNS</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>ReplaySync</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Rcv</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>RcvM</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Eoia</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Eoiz</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Eopa</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Eopz</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Eoda</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Eodz</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>DbwSync</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Critical</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>0</index>
+		<element>Comment</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Process</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Parent</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>SvcClass</element>
+		<elementType>Symbol</elementType>
+		<elementValue>sdl</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Node</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Analytics</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Libraries</element>
+		<elementType>String</elementType>
+		<elementValue>*,parseTCX</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Init</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Pub</element>
+		<elementType>String</elementType>
+		<elementValue>tpIn${NODE}:*,activitiesAnalysis</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Sub</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Load</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>MdbNS</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>MountNS</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>DestroyMountNS</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>ReplaySync</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Rcv</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>RcvM</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Eoia</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Eoiz</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Eopa</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Eopz</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Eoda</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Eodz</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>DbwSync</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Critical</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>Comment</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+</configparam>

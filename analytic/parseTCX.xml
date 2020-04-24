@@ -19,10 +19,11 @@ system"cd C:\\Users\\eohara\\Documents\\fitbit" //! Windows-only
 transform:{[fName]
     parsedFile0:.xml.rdXML[read0`$":",string fName];
 
-    telemetryRaw:first value first((enlist first first last first parsedFile0)`Lap)`Track;
-    `time xcols `altitudeMetres`distanceMetres`heartRateBpm`time`latitudeDegrees`longitudeDegrees xcol 
+    pub:`time xcols `altitudeMetres`distanceMetres`heartRateBpm`time`latitudeDegrees`longitudeDegrees xcol 
         delete Position from update "F"$AltitudeMeters,"F"$DistanceMeters,HeartRateBpm:{"H"$first x}each HeartRateBpm,LatitudeDegrees:"F"${first x}each Position,
-        LongitudeDegrees:"F"${last x}each Position,Time:{$[count[x]in 24 29;parseStringToTS x;'"Unknown timestamp format: ",x]}each Time from telemetryRaw
+        LongitudeDegrees:"F"${last x}each Position,Time:{$[count[x]in 24 29;.aa.parseStringToTS x;'"Unknown timestamp format: ",x]}each Time,updateTS:.z.p 
+        from first value first((enlist first first last first parsedFile0)`Lap)`Track;
+    .msg.pub[`activityTelemetry;pub];
     };
 
 
