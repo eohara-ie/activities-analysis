@@ -58,19 +58,19 @@ comment		Descriptive comment.</description>
 		<index>0</index>
 		<element>rdbAttrs</element>
 		<elementType>Symbol</elementType>
-		<elementValue></elementValue>
+		<elementValue>startTime:g</elementValue>
 	</param>
 	<param>
 		<index>0</index>
 		<element>hdbAttrs</element>
 		<elementType>Symbol</elementType>
-		<elementValue></elementValue>
+		<elementValue>startTime:p</elementValue>
 	</param>
 	<param>
 		<index>0</index>
 		<element>idbAttrs</element>
 		<elementType>Symbol</elementType>
-		<elementValue></elementValue>
+		<elementValue>startTime:p</elementValue>
 	</param>
 	<param>
 		<index>0</index>
@@ -82,13 +82,13 @@ comment		Descriptive comment.</description>
 		<index>0</index>
 		<element>hdbSortCols</element>
 		<elementType>Symbol</elementType>
-		<elementValue></elementValue>
+		<elementValue>startTime</elementValue>
 	</param>
 	<param>
 		<index>0</index>
 		<element>idbSortCols</element>
 		<elementType>Symbol</elementType>
-		<elementValue></elementValue>
+		<elementValue>startTime</elementValue>
 	</param>
 	<param>
 		<index>0</index>
@@ -200,6 +200,180 @@ comment		Descriptive comment.</description>
 	</param>
 	<param>
 		<index>0</index>
+		<element>comment</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>table</element>
+		<elementType>Symbol</elementType>
+		<elementValue>activityTelemetryRef</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>cat</element>
+		<elementType>Symbol</elementType>
+		<elementValue>part</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>partCol</element>
+		<elementType>Symbol</elementType>
+		<elementValue>startTime</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>updTsCol</element>
+		<elementType>Symbol</elementType>
+		<elementValue>updateTS</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>rdbAttrs</element>
+		<elementType>Symbol</elementType>
+		<elementValue>startTime:g</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>hdbAttrs</element>
+		<elementType>Symbol</elementType>
+		<elementValue>startTime:p</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>idbAttrs</element>
+		<elementType>Symbol</elementType>
+		<elementValue>startTime:p</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>rdbSortCols</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>hdbSortCols</element>
+		<elementType>Symbol</elementType>
+		<elementValue>startTime</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>idbSortCols</element>
+		<elementType>Symbol</elementType>
+		<elementValue>startTime</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>hdbRetPrtns</element>
+		<elementType>Integer</elementType>
+		<elementValue>0</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>fks</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>exclDeps</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>extKeys</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>ncCols</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>dictCols</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>serCols</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>miscCols</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>pseudos</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>dbwMaxRows</element>
+		<elementType>Integer</elementType>
+		<elementValue>10000</elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>isRel</element>
+		<elementType>Character</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>hasSentinel</element>
+		<elementType>Character</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>valFn</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>isMDQ</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>mdqTables</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>isMdqTraversable</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>btTable</element>
+		<elementType>Symbol</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
+		<element>isLogActivity</element>
+		<elementType>String</elementType>
+		<elementValue></elementValue>
+	</param>
+	<param>
+		<index>1</index>
 		<element>comment</element>
 		<elementType>String</elementType>
 		<elementValue></elementValue>

@@ -1,14 +1,7 @@
 <schema>
 	<ucname>delta_install_default</ucname>
-	<table>activityTelemetry</table>
+	<table>activityTelemetryRef</table>
 	<description></description>
-	<column>
-		<column>time</column>
-		<coltype>Timestamp</coltype>
-		<default></default>
-		<attribute></attribute>
-		<description></description>
-	</column>
 	<column>
 		<column>startTime</column>
 		<coltype>Timestamp</coltype>
@@ -17,36 +10,36 @@
 		<description></description>
 	</column>
 	<column>
-		<column>altitudeMetres</column>
-		<coltype>Float</coltype>
+		<column>sport</column>
+		<coltype>Symbol</coltype>
 		<default></default>
 		<attribute></attribute>
 		<description></description>
 	</column>
 	<column>
-		<column>distanceMetres</column>
-		<coltype>Float</coltype>
-		<default></default>
-		<attribute></attribute>
-		<description></description>
-	</column>
-	<column>
-		<column>heartRateBpm</column>
+		<column>calories</column>
 		<coltype>Short</coltype>
 		<default></default>
 		<attribute></attribute>
 		<description></description>
 	</column>
 	<column>
-		<column>latitudeDegrees</column>
+		<column>totaldistanceMetres</column>
 		<coltype>Float</coltype>
 		<default></default>
 		<attribute></attribute>
 		<description></description>
 	</column>
 	<column>
-		<column>longitudeDegrees</column>
+		<column>totalTimeSeconds</column>
 		<coltype>Float</coltype>
+		<default></default>
+		<attribute></attribute>
+		<description></description>
+	</column>
+	<column>
+		<column>intensity</column>
+		<coltype>Symbol</coltype>
 		<default></default>
 		<attribute></attribute>
 		<description></description>

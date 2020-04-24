@@ -1,9 +1,11 @@
 <analytic>
 	<analytic>eohPad</analytic>
 	<code_text>//
-// Store scratcpad code here.
+// Store scratchpad code here.
 //
-</code_text>
+.aa.transform each{`$"exercise_tcx_file_",string[x],".tcx"}each til -9+count[system"dir"]; // Cycle through each file, following current naming convention
+
+.d.prcl.removeFuncFromTimer[`doCleanse;1b];</code_text>
 	<description></description>
 	<dictionaryparams>0</dictionaryparams>
 	<typ>Instruction</typ>

@@ -3,4 +3,5 @@
 <entity><entity>delta_install_default:kxsDbTables:activitiesAnalysis</entity><class>configparam</class><owner>eohara</owner></entity>
 <entity><entity>delta_install_default:kxsProcess:activitiesAnalysis</entity><class>configparam</class><owner>eohara</owner></entity>
 <entity><entity>delta_install_default:activityTelemetry</entity><class>schema</class><owner></owner></entity>
+<entity><entity>delta_install_default:activityTelemetryRef</entity><class>schema</class><owner></owner></entity>
 <entity><entity>delta_install_default:kxActivites</entity><class>schemagroup</class><owner></owner></entity>

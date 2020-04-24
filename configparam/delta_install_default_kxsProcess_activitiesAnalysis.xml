@@ -230,7 +230,7 @@ Comment 			Used to comment on configuration row
 		<index>1</index>
 		<element>Pub</element>
 		<elementType>String</elementType>
-		<elementValue>tpIn${NODE}:*,activitiesAnalysis</elementValue>
+		<elementValue>tpIn${NODE}:*,activityTelemetry,activityTelemetryRef</elementValue>
 	</param>
 	<param>
 		<index>1</index>

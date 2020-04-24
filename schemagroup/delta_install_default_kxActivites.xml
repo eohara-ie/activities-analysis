@@ -2,4 +2,5 @@
 	<ucname>delta_install_default</ucname>
 	<tablegroup>kxActivites</tablegroup>
 	<tablename>activityTelemetry</tablename>
+	<tablename>activityTelemetryRef</tablename>
 </schemagroup>
