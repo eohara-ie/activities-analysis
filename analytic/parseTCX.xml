@@ -61,9 +61,8 @@ transformSaveToCSV:{[fName]
     parsedFile0:enlist first first last first .xml.rdXML[read0`$":",string fName];
     startTime:.aa.parseStringToTS first parsedFile0`Id;
 
-    pub:delete diffDist,diffTime from 
-        update Pace:Speed from 
-        update Speed:diffDist%("j"$diffTime)div 1000000000 from 
+    pub:delete diffDist,diffTime from
+        update Speed:diffDist%("j"$diffTime)div 1000000000 from
         update diffTime:deltas Time,diffDist:deltas DistanceMeters,Seconds:("j"$Time-startTime)div 1000000000 from
         delete HeartRateBpm,Position from
         update "F"$AltitudeMeters,
@@ -76,8 +75,10 @@ transformSaveToCSV:{[fName]
         MinHeartTarget:110, //~ Dummy value
         MaxHeartTarget:165 //~ Dummy value
         from first value first(parsedFile0`Lap)`Track;
+    
+    pub:update Pace:Speed from update Speed:0Nf from pub where Speed=0w;
 
-    0:[`:test.csv;csv 0: `Time`LatitudeDegrees`LongitudeDegrees`AltitudeMeters`DistanceMeters`HeartRate`Weight`Seconds`Pace`Speed`MinHeartTarget`MaxHeartTarget xcols pub]
+    0:[`:geo1.csv;csv 0: `Time`LatitudeDegrees`LongitudeDegrees`AltitudeMeters`DistanceMeters`HeartRate`Weight`Seconds`Pace`Speed`MinHeartTarget`MaxHeartTarget xcols pub]
     };
 
 
