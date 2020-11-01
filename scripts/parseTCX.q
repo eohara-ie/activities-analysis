@@ -1,6 +1,4 @@
-<analytic>
-	<analytic>parseTCX</analytic>
-	<code_text>CURRENT_DIR:system"dir" //! Windows-only. To include OS check before this point
+CURRENT_DIR:system"dir" //! Windows-only. To include OS check before this point
 system"cd C:\\Users\\eohara\\Documents\\fitbit" //! Windows-only(the directory of the TCX files)
 
 \d .aa
@@ -100,15 +98,3 @@ parseStringToTS:{
     };
 
 
-</code_text>
-	<description></description>
-	<dictionaryparams>0</dictionaryparams>
-	<typ>Instruction</typ>
-	<private>1</private>
-	<returntype></returntype>
-	<returndata></returndata>
-	<defaultconnection></defaultconnection>
-	<alias></alias>
-	<analytictype>polling</analytictype>
-	<returndescription></returndescription>
-</analytic>
