@@ -60,7 +60,7 @@ transformSaveToCSV:{[fName]
     startTime:.aa.parseStringToTS first parsedFile0`Id;
 
     pub:delete diffDist,diffTime from
-        update Speed:diffDist%("j"$diffTime)div 1000000000 from
+        update Speed:diffDist%("j"$diffTime)%1000000000 from
         update diffTime:deltas Time,diffDist:deltas DistanceMeters,Seconds:("j"$Time-startTime)div 1000000000 from
         delete HeartRateBpm,Position from
         update "F"$AltitudeMeters,

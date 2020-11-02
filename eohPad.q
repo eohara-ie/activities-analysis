@@ -122,3 +122,25 @@ delete diffDist,diffTime from
 
 
 \p
+//
+// From remote scratchpad 2nd Nov
+//
+
+startTime:2020.04.23D13:30:11.000000000
+Rundata:delete diffDist,diffTime from update Speed:diffDist%("j"$diffTime)%1000000000 from update diffTime:deltas Time,diffDist:deltas DistanceMeters,Seconds:("j"$Time-startTime)div 1000000000 from Rundata
+
+\c 50 2000
+
+select from tabE where Speed=0w
+
+
+0.36%
+
+("j"$0D00:00:00.122000000)%1000000000
+
+
+read0 hsym `$"C:\\Users\\eohara\\dash\\sample\\data\\geo1.csv"
+
+save `Rundata.csv
+
+(hsym `$"C:\\Users\\eohara\\dash\\sample\\data\\geo1.csv")0: csv 0: Rundata
