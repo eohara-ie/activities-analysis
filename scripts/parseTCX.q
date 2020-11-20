@@ -1,4 +1,4 @@
-\l scripts/xxml.util.q
+\l activities-analysis/scripts/xxml.util.q
 
 \d .aa
 
