@@ -9,7 +9,7 @@ Install and start the following
 - [Kx Dashboards](https://code.kx.com/dashboards/)
 - [Kx Developer](https://code.kx.com/developer/)
 
-Kx Developer is an IDE that contains a date-parsing library needed to transform the TCX file.
+Developer contains a date-parsing library needed to transform the TCX file.
 
 ## Gather Required Variables
 
