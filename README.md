@@ -19,7 +19,9 @@ When Kx Dashboards starts, you should see a `Demo Data` window appear. In the wi
 ```
 to obtain the port `Demo Data` is listening on. Take note of this value as we will connect to this process later.
 
-Next, retrieve the filepath of your activity data file(should have a .tcx file extension). Please see [this link](https://help.fitbit.com/articles/en_US/Help_article/1133.htm#) for information on how to export your activity data from Fitbit. If on Windows, make sure any back-slashes are escaped with an extra `\` like below:
+Next, retrieve the filepath of your activity data file(should have a .tcx file extension). Please see [this link](https://help.fitbit.com/articles/en_US/Help_article/1133.htm#) for information on how to export your activity data from Fitbit. 
+
+If on Windows, make sure any back-slashes are escaped with an extra `\` like below:
 ```
 "C:\Users\eogha\kx\fitbit_files\34561252610.tcx" <-- Before
 "C:\\Users\\eogha\\kx\\fitbit_files\\34561252610.tcx" <-- After
