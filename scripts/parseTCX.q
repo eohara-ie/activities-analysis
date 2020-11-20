@@ -2,11 +2,12 @@
 
 \d .aa
 
-\P 20 // High number of significant figures in AltitudeMeters column
+// High number of significant figures in AltitudeMeters column
+\P 20
 
 //
-// @desc Parses a TCX file into a kdb+ table. The columns are modified to match the table used in 
-//       the Fitness demonstation dashboard in Kx Dashboards.
+// @desc Parses a TCX file into a kdb+ table. Columns are then modified to match that used in 
+//       the Demo Fitness Tracker dashboard in Kx Dashboards Direct.
 //
 // @param   fName   {string}    Filepath to TCX file.
 //
