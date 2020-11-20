@@ -1,67 +1,26 @@
-CURRENT_DIR:system"dir" //! Windows-only. To include OS check before this point
-system"cd C:\\Users\\eohara\\Documents\\fitbit" //! Windows-only(the directory of the TCX files)
+\l scripts/xxml.util.q
 
 \d .aa
 
 \P 20 // High number of significant figures in AltitudeMeters column
 
-
 //
-// @desc Parses a TCX file and publishes reference and sensor tables to subscribers(kxsTP).
+// @desc Parses a TCX file into a kdb+ table. The columns are modified to match the table used in 
+//       the Fitness demonstation dashboard in Kx Dashboards.
 //
-// @param fName     {symbol}    TCX file name.
+// @param   fName   {string}    Filepath to TCX file.
 //
-// @example .aa.transformPub[`exercise_tcx_file_5.tcx]
+// @return          {table}     Fitness data in kdb+ form.
 //
-transformPub:{[fName]
-    parsedFile0:enlist first first last first .xml.rdXML[read0`$":",string fName];
-
-    pubRef:delete Creator,Id,Sport,Lap from 
-        update startTime:{$[count[x]in 24 29;.aa.parseStringToTS x;'"Unknown timestamp format: ",x]}each Id,
-        sport:{`$-1 _ 1 _ x}each Sport,
-        calories:{"H"$x`Calories}each Lap,
-        totaldistanceMetres:{"F"$x`DistanceMeters}each Lap,
-        totalTimeSeconds:{"F"$x`TotalTimeSeconds}each Lap,
-        intensity:{`$x`Intensity}each Lap,
-        updateTS:.z.p
-        from parsedFile0;
-    
-    .msg.pub[`activityTelemetryRef;pubRef];
-    
-    pub:`time`startTime xcols 
-        `altitudeMetres`distanceMetres`heartRateBpm`time`startTime`latitudeDegrees`longitudeDegrees`updateTS xcol 
-        delete Position from 
-        update startTime:first pubRef`startTime,
-        "F"$AltitudeMeters,
-        "F"$DistanceMeters,
-        HeartRateBpm:{"H"$first x}each HeartRateBpm,
-        LatitudeDegrees:"F"${first x}each Position,
-        LongitudeDegrees:"F"${last x}each Position,
-        Time:{$[count[x]in 24 29;.aa.parseStringToTS x;'"Unknown timestamp format: ",x]}each Time,
-        updateTS:.z.p 
-        from first value first(parsedFile0`Lap)`Track;
-    
-    .msg.pub[`activityTelemetry;pub];
-    };
-
-
+// @example .aa.transformTCX["C:\\Users\\eogha\\kx\\fitbit_files\\34561252610.tcx"]
 //
-// @desc Parses a TCX file and saves down sensor table as a CSV. The columns are modified to match the table used in 
-//       the Fitness demonstation dashboard on https://demo.kx.com.
-//
-// @param fName     {symbol}    TCX file name.
-//
-// @return          {symbol}    File symbol.
-//
-// @example .aa.transformSaveToCSV[`exercise_tcx_file_5.tcx]
-//
-transformSaveToCSV:{[fName]
-    parsedFile0:enlist first first last first .xml.rdXML[read0`$":",string fName];
+transformTCX:{[fName]
+    parsedFile0:enlist first first last first .xxml.rdXML read0 hsym`$fName;
     startTime:.aa.parseStringToTS first parsedFile0`Id;
 
-    pub:delete diffDist,diffTime from
+    tab:delete diffDist,diffTime from
         update Speed:diffDist%("j"$diffTime)%1000000000 from
-        update diffTime:deltas Time,diffDist:deltas DistanceMeters,Seconds:("j"$Time-startTime)div 1000000000 from
+        update diffTime:deltas Time,diffDist:deltas DistanceMeters,Seconds:("j"$Time-startTime)%1000000000 from
         delete HeartRateBpm,Position from
         update "F"$AltitudeMeters,
         "F"$DistanceMeters,
@@ -70,13 +29,13 @@ transformSaveToCSV:{[fName]
         LongitudeDegrees:"F"${last x}each Position,
         Time:{$[count[x]in 24 29;.aa.parseStringToTS x;'"Unknown timestamp format: ",x]}each Time,
         Weight:0, //~ Dummy value
-        MinHeartTarget:110, //~ Dummy value
-        MaxHeartTarget:165 //~ Dummy value
+        MinHeartTarget:90,
+        MaxHeartTarget:175
         from first value first(parsedFile0`Lap)`Track;
     
-    pub:update Pace:Speed from update Speed:0Nf from pub where Speed=0w;
-
-    0:[`:geo1.csv;csv 0: `Time`LatitudeDegrees`LongitudeDegrees`AltitudeMeters`DistanceMeters`HeartRate`Weight`Seconds`Pace`Speed`MinHeartTarget`MaxHeartTarget xcols pub]
+    `Time`LatitudeDegrees`LongitudeDegrees`AltitudeMeters`DistanceMeters`HeartRate`Weight`Seconds`Pace`Speed`MinHeartTarget`MaxHeartTarget xcols 
+        update Pace:Speed from 
+        update Speed:0Nf from tab where Speed=0w
     };
 
 
