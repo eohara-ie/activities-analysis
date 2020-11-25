@@ -1,7 +1,7 @@
 # activities-analysis
 Parsing TCX files from GPS-tracked activites on Fitbit in kdb+/q, and visualising them using Kx Dashboards Direct.
 
-Thanks to Jamie Sheridan, Kx for the XML parser code.
+Thanks to Yuanbo Li, Kx for the XML parser code.
 
 ## Prerequisites
 
