@@ -9,14 +9,15 @@
 // @desc Parses a TCX file into a kdb+ table. Columns are then modified to match that used in 
 //       the Demo Fitness Tracker dashboard in Kx Dashboards Direct.
 //
-// @param   fName   {string}    Filepath to TCX file.
+// @param   fName   {symbol|string}    Filepath to TCX file.
 //
-// @return          {table}     Fitness data in kdb+ form.
+// @return          {table}     Fitness data in kdb+ format.
 //
-// @example .aa.transformTCX["C:\\Users\\eogha\\kx\\fitbit_files\\34561252610.tcx"]
+// @example .aa.transformTCX`C:/Users/eohara/Documents/fitbit/37059150822.tcx
 //
 transformTCX:{[fName]
-    parsedFile0:enlist first first last first .xxml.rdXML read0 hsym`$fName;
+    if[10h~type fName;fName:`$fName];
+    parsedFile0:enlist first first last first .xxml.rdXML read0 hsym fName;
     startTime:.aa.parseStringToTS first parsedFile0`Id;
 
     tab:delete diffDist,diffTime from
@@ -31,7 +32,8 @@ transformTCX:{[fName]
         Time:{$[count[x]in 24 29;.aa.parseStringToTS x;'"Unknown timestamp format: ",x]}each Time,
         Weight:0, //~ Dummy value
         MinHeartTarget:90,
-        MaxHeartTarget:175
+        MaxHeartTarget:175,
+        StartTime:startTime
         from first value first(parsedFile0`Lap)`Track;
     
     `Time`LatitudeDegrees`LongitudeDegrees`AltitudeMeters`DistanceMeters`HeartRate`Weight`Seconds`Pace`Speed`MinHeartTarget`MaxHeartTarget xcols 

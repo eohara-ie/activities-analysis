@@ -1,13 +1,13 @@
 # activities-analysis
 Parsing TCX files from GPS-tracked activites on Fitbit in kdb+/q, and visualising them using Kx Dashboards Direct.
 
-Thanks to Yuanbo Li, Kx for the XML parser code.
+Thanks to Yuanbo Li, KX for the XML parser code.
 
 ## Prerequisites
 
 Install and start the following
-- [Kx Dashboards](https://code.kx.com/dashboards/)
-- [Kx Developer](https://code.kx.com/developer/)
+- [KX Dashboards](https://code.kx.com/dashboards/)
+- [KX Developer](https://code.kx.com/developer/)
 
 Developer contains a date-parsing library needed to transform the TCX file.
 
@@ -20,12 +20,6 @@ When Kx Dashboards starts, you should see a `Demo Data` window appear. In the wi
 to obtain the port `Demo Data` is listening on. Take note of this value as we will connect to this process later.
 
 Next, retrieve the filepath of your activity data file(should have a .tcx file extension). Please see [this link](https://help.fitbit.com/articles/en_US/Help_article/1133.htm#) for information on how to export your activity data from Fitbit. 
-
-If on Windows, make sure any back-slashes are escaped with an extra `\` like in the below example:
-```
-"C:\Users\eogha\kx\fitbit_files\34561252610.tcx" <-- Before
-"C:\\Users\\eogha\\kx\\fitbit_files\\34561252610.tcx" <-- After
-```
 
 ## How to Use
 
