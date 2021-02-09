@@ -1,0 +1,3272 @@
+{
+  "id": "fb2ac896-2d53-db51-e57b-ab54edd4aad1",
+  "name": "Fitness Comparisons",
+  "creationDate": "Mon, 08 Feb 2021 22:39:59 GMT",
+  "lastUpdateDate": "Tue, 09 Feb 2021 21:44:43 GMT",
+  "thumb": null,
+  "screenDetails": [
+    {
+      "label": "Screen 3",
+      "value": "20f352a7-e799-046e-53fb-aaf631e6b85a"
+    }
+  ],
+  "screens": [
+    {
+      "id": "20f352a7-e799-046e-53fb-aaf631e6b85a",
+      "name": "Screen 3",
+      "thumb": null,
+      "widgets": [
+        {
+          "id": "cbc84cb3-09c8-7e5a-d472-7198ad4af773",
+          "layout": {
+            "row": 0,
+            "column": 0,
+            "rowSpan": 31,
+            "colSpan": 12
+          },
+          "component": {
+            "id": "9af8f960-2427-96b8-dba1-9687fa1c36c9",
+            "key": "Panel",
+            "options": {
+              "version": "4.4.0",
+              "Basics": {
+                "ComponentName": "panel",
+                "RelativeHeight": true,
+                "Advanced": false,
+                "UserLayout": false,
+                "Floatable": false,
+                "ColCount": 36,
+                "RowCount": 24
+              },
+              "Style": {
+                "advanced": "",
+                "cssClasses": ""
+              },
+              "Alignment": {
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "innerPaddingLeft": 0,
+                "innerPaddingRight": 0,
+                "innerPaddingTop": 0,
+                "innerPaddingBottom": 0,
+                "titlePaddingLeft": 0,
+                "titlePaddingRight": 0,
+                "titlePaddingTop": 7,
+                "titlePaddingBottom": 7
+              },
+              "format": {
+                "titleFontSize": 16,
+                "titleHorizontal": "Center",
+                "titleShadow": false,
+                "tileBorderWidth": 0,
+                "tileBorderRounding": 0,
+                "tileBorderColor": "#000000",
+                "tileBackgroundColor": "#ffffff",
+                "tileTransparentBackground": true,
+                "tileShadow": false
+              }
+            },
+            "containerId": null,
+            "components": [],
+            "widgets": [
+              {
+                "id": "a5842b48-5de7-1871-bbb8-a5c5233cc1ab",
+                "layout": {
+                  "row": 2,
+                  "column": 0,
+                  "rowSpan": 11,
+                  "colSpan": 18
+                },
+                "component": {
+                  "id": "ffa6d9bb-525e-cacc-ea16-1df34d7108f0",
+                  "key": "ChartJS",
+                  "options": {
+                    "Overlay": {
+                      "customTooltip": "<table style='{{fontSize}}'><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{#each points }}<tr><td>{{{svg}}} {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 0,
+                          "_LayerId": "layer_14044",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleLayers": [
+                            "nofill",
+                            "Layer 2",
+                            "origin"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "B",
+                          "BackgroundColor": "#2f8720",
+                          "BorderColor": "#2f8720",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Rundata B"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Seconds",
+                          "YAxisData": "Pace",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        },
+                        "Labels": {
+                          "Font": {
+                            "Bold": false,
+                            "Size": 12
+                          }
+                        },
+                        "Points": {
+                          "PointBackgroundColor": "#7995b8",
+                          "PointBorderColor": "#7995b8",
+                          "PointHoverBackgroundColor": "#7995b8",
+                          "PointHoverBorderColor": "#7995b8"
+                        }
+                      },
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 1,
+                          "_LayerId": "layer_25788",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleLayers": [
+                            "Layer 1",
+                            "nofill",
+                            "origin"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "A",
+                          "BackgroundColor": "#88f280",
+                          "BorderColor": "#88f280",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Rundata A"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Seconds",
+                          "YAxisData": "Pace",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        },
+                        "Labels": {
+                          "Font": {
+                            "Bold": false,
+                            "Size": 12
+                          }
+                        }
+                      }
+                    ],
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_19209"
+                        },
+                        "Labels": {
+                          "FontColor": "#F8F8F8",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "mm:ss"
+                        }
+                      }
+                    ],
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_19213"
+                        },
+                        "Labels": {
+                          "FontColor": "#F8F8F8",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "SoftRange": false,
+                          "UseDataRange": false,
+                          "SuggestedMax": 0,
+                          "SuggestedMin": 0,
+                          "Max": 0,
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "format": {
+                      "widgetTitle": "Pace",
+                      "titleFontBold": false,
+                      "titleTransparentBackground": false
+                    },
+                    "version": "4.3.1",
+                    "Basics": {
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "runTime"
+                      },
+                      "Focus": "709"
+                    },
+                    "Zoom": {
+                      "Min": {
+                        "_dashboardsType": "viewstate",
+                        "value": "chartMin"
+                      },
+                      "Max": {
+                        "_dashboardsType": "viewstate",
+                        "value": "chartMax"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "6ff3fbd4-099d-2893-16be-56c76e0d9138",
+                "layout": {
+                  "row": 2,
+                  "column": 18,
+                  "rowSpan": 11,
+                  "colSpan": 18
+                },
+                "component": {
+                  "id": "fdc55cb7-ac70-7886-789c-bd90e714f661",
+                  "key": "ChartJS",
+                  "options": {
+                    "Overlay": {
+                      "customTooltip": "<table style='{{fontSize}}'><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{#each points }}<tr><td>{{{svg}}} {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 0,
+                          "_LayerId": "layer_14044",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleLayers": [
+                            "nofill",
+                            "Layer 2",
+                            "origin"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "B",
+                          "BackgroundColor": "#d45f0c",
+                          "BorderColor": "#d45f0c",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Rundata B"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Seconds",
+                          "YAxisData": "HeartRate",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        },
+                        "Labels": {
+                          "Font": {
+                            "Bold": false,
+                            "Size": 12
+                          }
+                        },
+                        "Points": {
+                          "PointBackgroundColor": "#e30910",
+                          "PointBorderColor": "#e30910",
+                          "PointHoverBackgroundColor": "#e30910",
+                          "PointHoverBorderColor": "#e30910"
+                        }
+                      },
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 1,
+                          "_LayerId": "layer_25788",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleLayers": [
+                            "Layer 1",
+                            "nofill",
+                            "origin"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "A",
+                          "BackgroundColor": "#e30910",
+                          "BorderColor": "#e30910",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Rundata A"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Seconds",
+                          "YAxisData": "HeartRate",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        },
+                        "Labels": {
+                          "Font": {
+                            "Bold": false,
+                            "Size": 12
+                          }
+                        }
+                      }
+                    ],
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_19209"
+                        },
+                        "Labels": {
+                          "FontColor": "#F8F8F8",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "hh:mm:ss"
+                        }
+                      }
+                    ],
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_19213"
+                        },
+                        "Labels": {
+                          "FontColor": "#F8F8F8",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "SoftRange": false,
+                          "UseDataRange": false,
+                          "SuggestedMax": 0,
+                          "SuggestedMin": 0,
+                          "Max": 0,
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "format": {
+                      "widgetTitle": "Heart Rate",
+                      "titleFontBold": false,
+                      "titleTransparentBackground": false
+                    },
+                    "version": "4.3.1",
+                    "Style": {
+                      "Palette": {
+                        "0": {
+                          "type": "#e30910"
+                        },
+                        "1": {
+                          "type": "#e65710"
+                        }
+                      }
+                    },
+                    "Basics": {
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "runTime"
+                      },
+                      "Focus": "595"
+                    },
+                    "Zoom": {
+                      "Min": {
+                        "_dashboardsType": "viewstate",
+                        "value": "chartMin"
+                      },
+                      "Max": {
+                        "_dashboardsType": "viewstate",
+                        "value": "chartMax"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "de0d105d-4a91-4cfe-55fa-9f9a44f463e4",
+                "layout": {
+                  "row": 13,
+                  "column": 0,
+                  "rowSpan": 11,
+                  "colSpan": 18
+                },
+                "component": {
+                  "id": "212ebf07-92c0-c850-f0a1-b58e5b44781f",
+                  "key": "ChartJS",
+                  "options": {
+                    "Overlay": {
+                      "customTooltip": "<table style='{{fontSize}}'><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{#each points }}<tr><td>{{{svg}}} {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 0,
+                          "_LayerId": "layer_14044",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleLayers": [
+                            "nofill",
+                            "Layer 2",
+                            "origin"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "B",
+                          "BackgroundColor": "#afb9c9",
+                          "BorderColor": "#afb9c9",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Rundata B"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Seconds",
+                          "YAxisData": "AltitudeMeters",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        },
+                        "Labels": {
+                          "Font": {
+                            "Bold": false,
+                            "Size": 12
+                          }
+                        },
+                        "Points": {
+                          "PointBackgroundColor": "#7995b8",
+                          "PointBorderColor": "#7995b8",
+                          "PointHoverBackgroundColor": "#7995b8",
+                          "PointHoverBorderColor": "#7995b8"
+                        }
+                      },
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 1,
+                          "_LayerId": "layer_25788",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "_PossibleLayers": [
+                            "Layer 1",
+                            "nofill",
+                            "origin"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "A",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Rundata A"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Seconds",
+                          "YAxisData": "AltitudeMeters",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        },
+                        "Labels": {
+                          "Font": {
+                            "Bold": false,
+                            "Size": 12
+                          }
+                        }
+                      }
+                    ],
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_19209"
+                        },
+                        "Labels": {
+                          "FontColor": "#F8F8F8",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "hh:mm:ss"
+                        }
+                      }
+                    ],
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_19213"
+                        },
+                        "Labels": {
+                          "FontColor": "#F8F8F8",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "SoftRange": false,
+                          "UseDataRange": false,
+                          "SuggestedMax": 0,
+                          "SuggestedMin": 0,
+                          "Max": 0,
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "format": {
+                      "widgetTitle": "Elevation",
+                      "titleFontBold": false,
+                      "titleTransparentBackground": false
+                    },
+                    "version": "4.3.1",
+                    "Basics": {
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "runTime"
+                      },
+                      "Focus": "494"
+                    },
+                    "Zoom": {
+                      "Min": {
+                        "_dashboardsType": "viewstate",
+                        "value": "chartMin"
+                      },
+                      "Max": {
+                        "_dashboardsType": "viewstate",
+                        "value": "chartMax"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "3c047f7b-a488-940c-d19c-52e0de62c621",
+                "layout": {
+                  "row": 0,
+                  "column": 10,
+                  "rowSpan": 2,
+                  "colSpan": 21
+                },
+                "component": {
+                  "id": "752acc53-9610-a1d4-0ac4-9feb4c879a46",
+                  "key": "Panel",
+                  "options": {
+                    "version": "4.4.0",
+                    "Basics": {
+                      "ComponentName": "panel",
+                      "RelativeHeight": false,
+                      "Advanced": false,
+                      "UserLayout": false,
+                      "Floatable": false,
+                      "ColCount": 36,
+                      "RowHeight": 25
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleFontBold": false,
+                      "titleShadow": false,
+                      "titleTransparentBackground": false,
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [
+                    {
+                      "id": "f2640881-0435-607c-7957-48a201ee7b37",
+                      "layout": {
+                        "row": 0,
+                        "column": 0,
+                        "rowSpan": 4,
+                        "colSpan": 6
+                      },
+                      "component": {
+                        "id": "3a5a2d63-fc66-d941-9481-cd11c5c45a22",
+                        "key": "BasicComponents",
+                        "options": {
+                          "version": "4.5.0",
+                          "dropdownPossibleValues": [
+                            "Date",
+                            "StartTime"
+                          ],
+                          "Basics": {
+                            "Data": {
+                              "_dashboardsType": "data",
+                              "value": "Run Demo/Start Times"
+                            },
+                            "ComponentName": "dropdown",
+                            "DataSourceMapping": {
+                              "Value": "StartTime",
+                              "Text": "Date"
+                            },
+                            "Items": [],
+                            "Width": 100,
+                            "Theme": "Dark",
+                            "Label": "Exercise A:",
+                            "LabelWidth": 75,
+                            "MultiSelect": false,
+                            "ShowSearch": false,
+                            "AdvancedSearch": false,
+                            "AcceptEmptyValues": false,
+                            "ForceSelectedValue": false,
+                            "FieldSummaryThreshold": 5,
+                            "TooltipSummaryThreshold": 10,
+                            "SelectAllValue": "",
+                            "horizontal": "Center",
+                            "vertical": "Middle",
+                            "tooltip": "",
+                            "ShowRowCount": false,
+                            "Flex": false,
+                            "EnableDropdownHeight": false
+                          },
+                          "Actions": [
+                            {
+                              "Current": "StartTime",
+                              "Target": {
+                                "_dashboardsType": "viewstate",
+                                "value": "exerciseA"
+                              },
+                              "_Type": "map"
+                            }
+                          ],
+                          "Style": {
+                            "advanced": "",
+                            "cssClasses": ""
+                          },
+                          "Alignment": {
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 0,
+                            "paddingBottom": 0,
+                            "innerPaddingLeft": 0,
+                            "innerPaddingRight": 0,
+                            "innerPaddingTop": 0,
+                            "innerPaddingBottom": 0,
+                            "titlePaddingLeft": 0,
+                            "titlePaddingRight": 0,
+                            "titlePaddingTop": 7,
+                            "titlePaddingBottom": 7
+                          },
+                          "format": {
+                            "titleFontSize": 16,
+                            "titleHorizontal": "Center",
+                            "titleFontBold": false,
+                            "titleShadow": false,
+                            "titleTransparentBackground": false,
+                            "tileBorderWidth": 0,
+                            "tileBorderRounding": 0,
+                            "tileBorderColor": "#000000",
+                            "tileBackgroundColor": "#ffffff",
+                            "tileTransparentBackground": true,
+                            "tileShadow": false
+                          }
+                        },
+                        "containerId": null,
+                        "components": [],
+                        "widgets": [],
+                        "definitionId": "16",
+                        "hasOnSettingsChange": true
+                      }
+                    },
+                    {
+                      "id": "46b65737-0887-d54d-bb27-4c15c499eeb3",
+                      "layout": {
+                        "row": 0,
+                        "column": 6,
+                        "rowSpan": 4,
+                        "colSpan": 6
+                      },
+                      "component": {
+                        "id": "416dea9e-5583-02a0-6fc9-bbec90b9d5a8",
+                        "key": "BasicComponents",
+                        "options": {
+                          "version": "4.5.0",
+                          "dropdownPossibleValues": [
+                            "Date",
+                            "StartTime"
+                          ],
+                          "Basics": {
+                            "Data": {
+                              "_dashboardsType": "data",
+                              "value": "Run Demo/Start Times"
+                            },
+                            "ComponentName": "dropdown",
+                            "DataSourceMapping": {
+                              "Value": "StartTime",
+                              "Text": "Date"
+                            },
+                            "Items": [],
+                            "Width": 100,
+                            "Theme": "Dark",
+                            "Label": "Exercise B:",
+                            "LabelWidth": 75,
+                            "MultiSelect": false,
+                            "ShowSearch": false,
+                            "AdvancedSearch": false,
+                            "AcceptEmptyValues": false,
+                            "ForceSelectedValue": false,
+                            "FieldSummaryThreshold": 5,
+                            "TooltipSummaryThreshold": 10,
+                            "SelectAllValue": "",
+                            "horizontal": "Center",
+                            "vertical": "Middle",
+                            "tooltip": "",
+                            "ShowRowCount": false,
+                            "Flex": false,
+                            "EnableDropdownHeight": false
+                          },
+                          "Actions": [
+                            {
+                              "Current": "StartTime",
+                              "Target": {
+                                "_dashboardsType": "viewstate",
+                                "value": "exerciseB"
+                              },
+                              "_Type": "map"
+                            }
+                          ],
+                          "Style": {
+                            "advanced": "",
+                            "cssClasses": ""
+                          },
+                          "Alignment": {
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 0,
+                            "paddingBottom": 0,
+                            "innerPaddingLeft": 0,
+                            "innerPaddingRight": 0,
+                            "innerPaddingTop": 0,
+                            "innerPaddingBottom": 0,
+                            "titlePaddingLeft": 0,
+                            "titlePaddingRight": 0,
+                            "titlePaddingTop": 7,
+                            "titlePaddingBottom": 7
+                          },
+                          "format": {
+                            "titleFontSize": 16,
+                            "titleHorizontal": "Center",
+                            "titleFontBold": false,
+                            "titleShadow": false,
+                            "titleTransparentBackground": false,
+                            "tileBorderWidth": 0,
+                            "tileBorderRounding": 0,
+                            "tileBorderColor": "#000000",
+                            "tileBackgroundColor": "#ffffff",
+                            "tileTransparentBackground": true,
+                            "tileShadow": false
+                          }
+                        },
+                        "containerId": null,
+                        "components": [],
+                        "widgets": [],
+                        "definitionId": "16",
+                        "hasOnSettingsChange": true
+                      }
+                    },
+                    {
+                      "id": "c1c0663f-915f-6bb1-9429-c281b9b5b65f",
+                      "layout": {
+                        "row": 0,
+                        "column": 12,
+                        "rowSpan": 4,
+                        "colSpan": 7
+                      },
+                      "component": {
+                        "id": "10d3905d-f133-bfe5-bc57-88ef15950c48",
+                        "key": "BasicComponents",
+                        "options": {
+                          "version": "4.5.0",
+                          "dropdownPossibleValues": [
+                            "Sport"
+                          ],
+                          "Basics": {
+                            "Data": {
+                              "_dashboardsType": "data",
+                              "value": "Run Demo/Sports"
+                            },
+                            "SelectedValue": "Running",
+                            "ComponentName": "dropdown",
+                            "DataSourceMapping": {
+                              "Value": "Sport",
+                              "Text": "Sport"
+                            },
+                            "Items": [],
+                            "Width": 100,
+                            "Theme": "Dark",
+                            "Label": "Exercise Type:",
+                            "LabelWidth": 75,
+                            "MultiSelect": false,
+                            "ShowSearch": false,
+                            "AdvancedSearch": false,
+                            "AcceptEmptyValues": false,
+                            "ForceSelectedValue": false,
+                            "FieldSummaryThreshold": 5,
+                            "TooltipSummaryThreshold": 10,
+                            "SelectAllValue": "",
+                            "horizontal": "Center",
+                            "vertical": "Middle",
+                            "tooltip": "",
+                            "ShowRowCount": false,
+                            "Flex": false,
+                            "EnableDropdownHeight": false
+                          },
+                          "Actions": [
+                            {
+                              "Current": "Sport",
+                              "Target": {
+                                "_dashboardsType": "viewstate",
+                                "value": "SelectedSport"
+                              },
+                              "_Type": "map"
+                            }
+                          ],
+                          "Style": {
+                            "advanced": "",
+                            "cssClasses": ""
+                          },
+                          "Alignment": {
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 0,
+                            "paddingBottom": 0,
+                            "innerPaddingLeft": 0,
+                            "innerPaddingRight": 0,
+                            "innerPaddingTop": 0,
+                            "innerPaddingBottom": 0,
+                            "titlePaddingLeft": 0,
+                            "titlePaddingRight": 0,
+                            "titlePaddingTop": 7,
+                            "titlePaddingBottom": 7
+                          },
+                          "format": {
+                            "titleFontSize": 16,
+                            "titleHorizontal": "Center",
+                            "titleFontBold": false,
+                            "titleShadow": false,
+                            "titleTransparentBackground": false,
+                            "tileBorderWidth": 0,
+                            "tileBorderRounding": 0,
+                            "tileBorderColor": "#000000",
+                            "tileBackgroundColor": "#ffffff",
+                            "tileTransparentBackground": true,
+                            "tileShadow": false
+                          }
+                        },
+                        "containerId": null,
+                        "components": [],
+                        "widgets": [],
+                        "definitionId": "16",
+                        "hasOnSettingsChange": true
+                      }
+                    },
+                    {
+                      "id": "0165aca7-2b46-e2d3-49bd-82dd92b70dfa",
+                      "layout": {
+                        "row": 0,
+                        "column": 19,
+                        "rowSpan": 4,
+                        "colSpan": 17
+                      },
+                      "component": {
+                        "id": "362235e0-5c54-3932-966b-5fe00ce2133d",
+                        "key": "PlayBack",
+                        "options": {
+                          "version": "4.4.0",
+                          "possiblePeriod": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget",
+                            "StartTime",
+                            "Sport"
+                          ],
+                          "Basics": {
+                            "Data": {
+                              "_dashboardsType": "data",
+                              "value": "Run Demo/Rundata A"
+                            },
+                            "Selected": {
+                              "_dashboardsType": "viewstate",
+                              "value": "runTime"
+                            },
+                            "SelectedColumn": "Seconds",
+                            "TimeColumn": "Seconds",
+                            "Mode": "Event",
+                            "Speed": "1x",
+                            "Playing": 4,
+                            "MaxOverallTime": 60,
+                            "IntervalTime": 1,
+                            "multiStateControl": true,
+                            "speedControl": true,
+                            "ForcePause": false,
+                            "DisplayWarning": false
+                          },
+                          "Alignment": {
+                            "paddingLeft": "0",
+                            "paddingRight": "0",
+                            "paddingTop": 40,
+                            "paddingBottom": "0",
+                            "innerPaddingLeft": 0,
+                            "innerPaddingRight": 0,
+                            "innerPaddingTop": 0,
+                            "innerPaddingBottom": 0,
+                            "titlePaddingLeft": 0,
+                            "titlePaddingRight": 0,
+                            "titlePaddingTop": 7,
+                            "titlePaddingBottom": 7
+                          },
+                          "Style": {
+                            "advanced": "",
+                            "cssClasses": ""
+                          },
+                          "format": {
+                            "titleFontSize": 16,
+                            "titleHorizontal": "Center",
+                            "titleFontBold": false,
+                            "titleShadow": false,
+                            "titleTransparentBackground": false,
+                            "tileBorderWidth": 0,
+                            "tileBorderRounding": 0,
+                            "tileBorderColor": "#000000",
+                            "tileBackgroundColor": "#ffffff",
+                            "tileTransparentBackground": true,
+                            "tileShadow": false
+                          }
+                        },
+                        "containerId": null,
+                        "components": [],
+                        "widgets": [],
+                        "definitionId": "47",
+                        "hasOnSettingsChange": true
+                      }
+                    }
+                  ],
+                  "definitionId": "50",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "7d39c723-b7fe-d635-c081-20e8d2cab12b",
+                "layout": {
+                  "row": 13,
+                  "column": 18,
+                  "rowSpan": 11,
+                  "colSpan": 9
+                },
+                "component": {
+                  "id": "034ae7a7-7fe0-87e3-06f4-aef659e17d23",
+                  "key": "GeoMap",
+                  "options": {
+                    "version": "4.4.0",
+                    "possibleFloats": [
+                      "default"
+                    ],
+                    "possiblePLatLong": [
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "Seconds",
+                      "Pace",
+                      "Speed"
+                    ],
+                    "possibleStrings": [
+                      "Sport"
+                    ],
+                    "possibleDKeys": [],
+                    "possibleDValues": [],
+                    "possibleGKeys": [
+                      "default"
+                    ],
+                    "possibleDString": [],
+                    "possibleVString": [],
+                    "possibleHFloats": [
+                      "default"
+                    ],
+                    "possibleLFloats": [],
+                    "possibleTrack": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget",
+                      "StartTime",
+                      "Sport"
+                    ],
+                    "possibleShapes": [
+                      "use selected shape",
+                      "Sport"
+                    ],
+                    "possibleColors": [
+                      "use selected color",
+                      "Sport"
+                    ],
+                    "possibleCircle": [],
+                    "tooltips": "",
+                    "all": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget",
+                      "StartTime",
+                      "Sport"
+                    ],
+                    "vall": [],
+                    "overlayall": [],
+                    "overlayGeoJSONKeys": [
+                      ""
+                    ],
+                    "Basics": {
+                      "ComponentName": "GeoMap",
+                      "Focus": "",
+                      "Theme": "Dark"
+                    },
+                    "MapDetails": {
+                      "Type": "hybrid",
+                      "Zoom": 20,
+                      "CenterX": 52.655351638793945,
+                      "CenterY": -6.866009831428528,
+                      "TrackChanges": false,
+                      "Bounds": "",
+                      "CustomMarkers": "",
+                      "MapKey": "",
+                      "Style": ""
+                    },
+                    "OverLay": {
+                      "Data": "",
+                      "DataGeo": "USA",
+                      "DataGeoId": "",
+                      "DataType": "GeoJSON",
+                      "GeoColumn": "states",
+                      "Selected": "",
+                      "ShowLegend": true,
+                      "LegendType": "percent",
+                      "LegendColor": "blue",
+                      "ColorDB": "",
+                      "TooltipData": "",
+                      "Bounds": "",
+                      "GeoFilter": "",
+                      "GeoSelected": "",
+                      "SelectedObjectRouting": [],
+                      "ImageSrc": "none",
+                      "ImageNorth": 0,
+                      "ImageSouth": 0,
+                      "ImageEast": 0,
+                      "ImageWest": 0,
+                      "ImageOpacity": 30
+                    },
+                    "Voronoi": {
+                      "Data": "",
+                      "LineColor": "#ff0000",
+                      "DotColor": "0000ff",
+                      "ShowScale": false,
+                      "Scale": "",
+                      "Opacity": 0.2,
+                      "ScaleColor": "blue"
+                    },
+                    "Points": {
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Rundata A"
+                      },
+                      "Selected": "",
+                      "Tracker": {
+                        "_dashboardsType": "viewstate",
+                        "value": "runTime"
+                      },
+                      "TrackedItem": "Seconds",
+                      "Title": "Seconds",
+                      "Latitude": "LatitudeDegrees",
+                      "Longitude": "LongitudeDegrees",
+                      "Shape": "dot",
+                      "ShapeColor": "#2f8720",
+                      "ShapeSize": 10,
+                      "ShapeHoverColor": "#000000",
+                      "ShapeSelectedColor": "#000000",
+                      "ShapeColorOpacity": 100,
+                      "ShapeHoverColorOpacity": 100,
+                      "ShapeSelectedColorOpacity": 100,
+                      "ClusterShape": "default",
+                      "ClusterSize": "default",
+                      "Cluster": false,
+                      "ShowTooltip": true,
+                      "TooltipData": "",
+                      "Zoom": true,
+                      "ZoomBase": false,
+                      "Center": true,
+                      "PointsInView": false,
+                      "Actions": [],
+                      "SelectedObjectRouting": [],
+                      "ShapeDB": "use selected shape",
+                      "ShapeCanRotation": false,
+                      "ShapeRotation": "Time",
+                      "ShapeColorDB": "use selected color"
+                    },
+                    "Bounds": [],
+                    "Heatmap": {
+                      "Data": "",
+                      "Gradient": "default",
+                      "Radius": 20,
+                      "Opacity": 100,
+                      "Show": true
+                    },
+                    "Lines": {
+                      "Data": "",
+                      "Selected": "",
+                      "Color": "#ff0000",
+                      "LabelColor": "#ffffff",
+                      "LabelSize": 10,
+                      "LabelText": "",
+                      "ShowTooltip": true,
+                      "ShowLabel": true,
+                      "Geodesic": true
+                    },
+                    "Circles": {
+                      "Data": "",
+                      "StrokeColor": "",
+                      "StrokeWeight": "",
+                      "StrokeOpacity": "",
+                      "FillColor": "",
+                      "FillOpacity": "",
+                      "Radius": "",
+                      "Latitude": "",
+                      "Longitude": "",
+                      "ShowTooltip": false,
+                      "Tooltip": ""
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": "0",
+                      "paddingRight": "0",
+                      "paddingTop": "0",
+                      "paddingBottom": "0",
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "Format": {
+                      "widgetTitle": "",
+                      "titleFontSize": "16",
+                      "titleHorizontal": "Center",
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 0,
+                      "titlePaddingBottom": 0
+                    },
+                    "format": {
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleFontBold": false,
+                      "titleShadow": false,
+                      "titleTransparentBackground": false,
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    },
+                    "possibleImageString": [
+                      "none"
+                    ],
+                    "possible_dashboards": [
+                      {
+                        "title": "none",
+                        "value": "none"
+                      },
+                      {
+                        "title": "Demo Liquidity",
+                        "value": "34bc1f04-b59d-a35a-9942-3a6ee0c222fa"
+                      },
+                      {
+                        "title": "Demo Fitness Tracker",
+                        "value": "3764adb7-e0b1-2b85-c673-d0adc26f2f7e"
+                      },
+                      {
+                        "title": "Demo Property",
+                        "value": "39795426-db77-dea-becc-5d19218f9224"
+                      },
+                      {
+                        "title": "Demo Notifications",
+                        "value": "3fcc2766-f904-d2ba-4470-8e91d9e949de"
+                      },
+                      {
+                        "title": "Demo Visualize",
+                        "value": "53c5e521-2d14-4d6d-fe61-16ca42cea162"
+                      },
+                      {
+                        "title": "Demo Virtual Datasources",
+                        "value": "79e19013-f14e-ba9d-65f1-7adb3d238f55"
+                      },
+                      {
+                        "title": "Demo ChartIQ",
+                        "value": "7e2ae5d3-53b0-fa94-b7e0-31ef1eb681de"
+                      },
+                      {
+                        "title": "Demo Data",
+                        "value": "80c52499-cd0a-a1ca-46bb-178be3aaeed"
+                      },
+                      {
+                        "title": "Demo Stream",
+                        "value": "8e3e8c4f-8fd1-166e-fe4e-f49cc5504161"
+                      },
+                      {
+                        "title": "Demo Actions Examples",
+                        "value": "9252b787-d7cc-9bab-d20d-f19ffad41405"
+                      },
+                      {
+                        "title": "Demo Scatter",
+                        "value": "a44f280a-efcd-f550-a096-0ef7d1624e23"
+                      },
+                      {
+                        "title": "Demo Health",
+                        "value": "b206840b-2e64-4209-bacd-166c883928f"
+                      },
+                      {
+                        "title": "Demo",
+                        "value": "b417c690-e82d-375a-ed74-484286ccfce0"
+                      },
+                      {
+                        "title": "Demo Graph",
+                        "value": "b58fe5e3-d02f-3130-2e53-5bddc0bbac3d"
+                      },
+                      {
+                        "title": "Demo Sensors",
+                        "value": "c02f1251-9300-2c35-9efe-85a0b87665f4"
+                      },
+                      {
+                        "title": "Demo DrillDown",
+                        "value": "ca36fe7-d6c7-acfc-14b1-a08a706b49d1"
+                      },
+                      {
+                        "title": "Stream Test",
+                        "value": "e9c38322-9660-b54b-d072-cd3c9af241c1"
+                      },
+                      {
+                        "title": "Fitness Comparisons",
+                        "value": "fb2ac896-2d53-db51-e57b-ab54edd4aad1"
+                      }
+                    ],
+                    "possible_viewstates": [
+                      "BarCharts/Gridline Opacity",
+                      "BarCharts/MaxAltitude",
+                      "BarCharts/MaxDistance",
+                      "BarCharts/MaxHeartRate",
+                      "BarCharts/MaxPace",
+                      "BarCharts/MaxTime",
+                      "BarCharts/Padding",
+                      "CountyData/Parish",
+                      "CountyData/Prv",
+                      "CountyData/county",
+                      "Heatmap/date",
+                      "Heatmap/heatmap",
+                      "Line/line",
+                      "Line/lineColor",
+                      "Property Index/zip",
+                      "Run/Sate",
+                      "SelectedSport",
+                      "StatRain",
+                      "address",
+                      "bounds",
+                      "county",
+                      "exerciseA",
+                      "exerciseB",
+                      "from",
+                      "max",
+                      "min",
+                      "region",
+                      "runTime",
+                      "selected",
+                      "to"
+                    ]
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "definitionId": "46",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "12fcbba5-c109-6f90-72b2-ec5b140c60c1",
+                "layout": {
+                  "row": 13,
+                  "column": 27,
+                  "rowSpan": 11,
+                  "colSpan": 9
+                },
+                "component": {
+                  "id": "9062ac28-77d0-0463-8d7e-1d473d0e55dc",
+                  "key": "GeoMap",
+                  "options": {
+                    "version": "4.4.0",
+                    "possibleFloats": [
+                      "default"
+                    ],
+                    "possiblePLatLong": [
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "Seconds",
+                      "Pace",
+                      "Speed"
+                    ],
+                    "possibleStrings": [
+                      "Sport"
+                    ],
+                    "possibleDKeys": [],
+                    "possibleDValues": [
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget"
+                    ],
+                    "possibleGKeys": [
+                      "default"
+                    ],
+                    "possibleDString": [
+                      "Sport"
+                    ],
+                    "possibleVString": [],
+                    "possibleHFloats": [
+                      "default"
+                    ],
+                    "possibleLFloats": [],
+                    "possibleTrack": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget",
+                      "StartTime",
+                      "Sport"
+                    ],
+                    "possibleShapes": [
+                      "use selected shape",
+                      "Sport"
+                    ],
+                    "possibleColors": [
+                      "Sport"
+                    ],
+                    "possibleCircle": [],
+                    "tooltips": "",
+                    "all": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget",
+                      "StartTime",
+                      "Sport"
+                    ],
+                    "vall": [],
+                    "overlayall": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget",
+                      "StartTime",
+                      "Sport"
+                    ],
+                    "overlayGeoJSONKeys": [
+                      ""
+                    ],
+                    "Basics": {
+                      "ComponentName": "GeoMap",
+                      "Focus": "",
+                      "Theme": "Dark"
+                    },
+                    "MapDetails": {
+                      "Type": "hybrid",
+                      "Zoom": 14,
+                      "CenterX": 52.667821320016714,
+                      "CenterY": -6.827185630798334,
+                      "TrackChanges": true,
+                      "Bounds": "",
+                      "CustomMarkers": "",
+                      "MapKey": "",
+                      "Style": ""
+                    },
+                    "OverLay": {
+                      "Data": "",
+                      "DataGeo": "USA",
+                      "DataGeoId": "",
+                      "DataType": "GeoJSON",
+                      "GeoColumn": "states",
+                      "Selected": "",
+                      "ShowLegend": true,
+                      "LegendType": "percent",
+                      "LegendColor": "blue",
+                      "ColorDB": "",
+                      "TooltipData": "",
+                      "Bounds": "",
+                      "GeoFilter": "",
+                      "GeoSelected": "",
+                      "SelectedObjectRouting": [],
+                      "ImageSrc": "none",
+                      "ImageNorth": 0,
+                      "ImageSouth": 0,
+                      "ImageEast": 0,
+                      "ImageWest": 0,
+                      "ImageOpacity": 30,
+                      "ShowOverlay": false,
+                      "DataKey": "Time",
+                      "DataValue": "LatitudeDegrees",
+                      "DataDesc": "Sport"
+                    },
+                    "Voronoi": {
+                      "Data": "",
+                      "LineColor": "#ff0000",
+                      "DotColor": "0000ff",
+                      "ShowScale": false,
+                      "Scale": "",
+                      "Opacity": 0.2,
+                      "ScaleColor": "blue"
+                    },
+                    "Points": {
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Rundata B"
+                      },
+                      "Selected": "",
+                      "Tracker": {
+                        "_dashboardsType": "viewstate",
+                        "value": "runTime"
+                      },
+                      "TrackedItem": "Seconds",
+                      "Title": "Seconds",
+                      "Latitude": "LatitudeDegrees",
+                      "Longitude": "LongitudeDegrees",
+                      "Shape": "dot",
+                      "ShapeColor": "#2f8720",
+                      "ShapeSize": 10,
+                      "ShapeHoverColor": "#000000",
+                      "ShapeSelectedColor": "#000000",
+                      "ShapeColorOpacity": 100,
+                      "ShapeHoverColorOpacity": 100,
+                      "ShapeSelectedColorOpacity": 100,
+                      "ClusterShape": "default",
+                      "ClusterSize": "default",
+                      "Cluster": false,
+                      "ShowTooltip": true,
+                      "TooltipData": "",
+                      "Zoom": true,
+                      "ZoomBase": false,
+                      "Center": true,
+                      "PointsInView": true,
+                      "Actions": [],
+                      "SelectedObjectRouting": [],
+                      "ShapeDB": "use selected shape",
+                      "ShapeCanRotation": false,
+                      "ShapeRotation": "Time",
+                      "ShapeColorDB": "Sport"
+                    },
+                    "Bounds": [],
+                    "Heatmap": {
+                      "Data": "",
+                      "Gradient": "default",
+                      "Radius": 20,
+                      "Opacity": 100,
+                      "Show": true
+                    },
+                    "Lines": {
+                      "Data": "",
+                      "Selected": "",
+                      "Color": "#ff0000",
+                      "LabelColor": "#ffffff",
+                      "LabelSize": 10,
+                      "LabelText": "",
+                      "ShowTooltip": true,
+                      "ShowLabel": true,
+                      "Geodesic": true
+                    },
+                    "Circles": {
+                      "Data": "",
+                      "StrokeColor": "",
+                      "StrokeWeight": "",
+                      "StrokeOpacity": "",
+                      "FillColor": "",
+                      "FillOpacity": "",
+                      "Radius": "",
+                      "Latitude": "",
+                      "Longitude": "",
+                      "ShowTooltip": false,
+                      "Tooltip": ""
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": "0",
+                      "paddingRight": "0",
+                      "paddingTop": "0",
+                      "paddingBottom": "0",
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "Format": {
+                      "widgetTitle": "",
+                      "titleFontSize": "16",
+                      "titleHorizontal": "Center",
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 0,
+                      "titlePaddingBottom": 0
+                    },
+                    "format": {
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleFontBold": false,
+                      "titleShadow": false,
+                      "titleTransparentBackground": false,
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    },
+                    "possibleImageString": [
+                      "none",
+                      "Sport"
+                    ],
+                    "possible_dashboards": [
+                      {
+                        "title": "none",
+                        "value": "none"
+                      },
+                      {
+                        "title": "Demo Liquidity",
+                        "value": "34bc1f04-b59d-a35a-9942-3a6ee0c222fa"
+                      },
+                      {
+                        "title": "Demo Fitness Tracker",
+                        "value": "3764adb7-e0b1-2b85-c673-d0adc26f2f7e"
+                      },
+                      {
+                        "title": "Demo Property",
+                        "value": "39795426-db77-dea-becc-5d19218f9224"
+                      },
+                      {
+                        "title": "Demo Notifications",
+                        "value": "3fcc2766-f904-d2ba-4470-8e91d9e949de"
+                      },
+                      {
+                        "title": "Demo Visualize",
+                        "value": "53c5e521-2d14-4d6d-fe61-16ca42cea162"
+                      },
+                      {
+                        "title": "Demo Virtual Datasources",
+                        "value": "79e19013-f14e-ba9d-65f1-7adb3d238f55"
+                      },
+                      {
+                        "title": "Demo ChartIQ",
+                        "value": "7e2ae5d3-53b0-fa94-b7e0-31ef1eb681de"
+                      },
+                      {
+                        "title": "Demo Data",
+                        "value": "80c52499-cd0a-a1ca-46bb-178be3aaeed"
+                      },
+                      {
+                        "title": "Demo Stream",
+                        "value": "8e3e8c4f-8fd1-166e-fe4e-f49cc5504161"
+                      },
+                      {
+                        "title": "Demo Actions Examples",
+                        "value": "9252b787-d7cc-9bab-d20d-f19ffad41405"
+                      },
+                      {
+                        "title": "Demo Scatter",
+                        "value": "a44f280a-efcd-f550-a096-0ef7d1624e23"
+                      },
+                      {
+                        "title": "Demo Health",
+                        "value": "b206840b-2e64-4209-bacd-166c883928f"
+                      },
+                      {
+                        "title": "Demo",
+                        "value": "b417c690-e82d-375a-ed74-484286ccfce0"
+                      },
+                      {
+                        "title": "Demo Graph",
+                        "value": "b58fe5e3-d02f-3130-2e53-5bddc0bbac3d"
+                      },
+                      {
+                        "title": "Demo Sensors",
+                        "value": "c02f1251-9300-2c35-9efe-85a0b87665f4"
+                      },
+                      {
+                        "title": "Demo DrillDown",
+                        "value": "ca36fe7-d6c7-acfc-14b1-a08a706b49d1"
+                      },
+                      {
+                        "title": "Stream Test",
+                        "value": "e9c38322-9660-b54b-d072-cd3c9af241c1"
+                      },
+                      {
+                        "title": "Fitness Comparisons",
+                        "value": "fb2ac896-2d53-db51-e57b-ab54edd4aad1"
+                      }
+                    ],
+                    "possible_viewstates": [
+                      "BarCharts/Gridline Opacity",
+                      "BarCharts/MaxAltitude",
+                      "BarCharts/MaxDistance",
+                      "BarCharts/MaxHeartRate",
+                      "BarCharts/MaxPace",
+                      "BarCharts/MaxTime",
+                      "BarCharts/Padding",
+                      "CountyData/Parish",
+                      "CountyData/Prv",
+                      "CountyData/county",
+                      "Heatmap/date",
+                      "Heatmap/heatmap",
+                      "Line/line",
+                      "Line/lineColor",
+                      "Property Index/zip",
+                      "Run/Sate",
+                      "SelectedSport",
+                      "StatRain",
+                      "address",
+                      "bounds",
+                      "chartMax",
+                      "chartMin",
+                      "county",
+                      "exerciseA",
+                      "exerciseB",
+                      "from",
+                      "max",
+                      "min",
+                      "region",
+                      "runTime",
+                      "selected",
+                      "to"
+                    ]
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "definitionId": "46",
+                  "hasOnSettingsChange": true
+                }
+              }
+            ],
+            "definitionId": "50",
+            "hasOnSettingsChange": true
+          }
+        }
+      ],
+      "relativeHeight": true,
+      "rowCount": 31,
+      "colCount": 12,
+      "floatable": false,
+      "isDefault": true
+    }
+  ],
+  "popups": [],
+  "tags": [
+    "starred"
+  ],
+  "dashboardTheme": "Dark",
+  "themeSwitchable": true,
+  "saveTimestamp": null,
+  "relativeHeight": true,
+  "rowCount": 31,
+  "colCount": 12,
+  "floatable": false,
+  "viewState": {
+    "address": {
+      "_default": "",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": ""
+    },
+    "CountyData": {
+      "Prv": {
+        "_default": "Munster",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "Munster"
+      },
+      "county": {
+        "_default": "",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": ""
+      },
+      "Parish": {
+        "_default": "",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": ""
+      }
+    },
+    "max": {
+      "_default": 10000000,
+      "_viewType": true,
+      "_type": "float",
+      "value": 10000000,
+      "_rolling": false
+    },
+    "county": {
+      "_default": "Dublin",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": "Dublin"
+    },
+    "Run": {
+      "Sate": {
+        "_default": "2016-06-30T11:53:00.000000000Z",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "datetime",
+        "value": "2016-06-30T11:53:00.000000000Z"
+      }
+    },
+    "Heatmap": {
+      "date": {
+        "_default": "2017-08-21T00:00:00.000000000Z",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "datetime",
+        "value": "2017-08-21T00:00:00.000000000Z"
+      },
+      "heatmap": {
+        "_default": 1335740700,
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "int",
+        "value": 1335740700
+      }
+    },
+    "StatRain": {
+      "_default": "Population",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": "Population"
+    },
+    "Line": {
+      "line": {
+        "_default": "Tallaght - The Point",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "Tallaght - The Point"
+      },
+      "lineColor": {
+        "_default": "Red",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "Red"
+      }
+    },
+    "min": {
+      "_default": 0,
+      "_viewType": true,
+      "_type": "float",
+      "value": 0
+    },
+    "bounds": {
+      "_default": "",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": ""
+    },
+    "from": {
+      "_default": "2015-12-01T00:00:00.000Z",
+      "_viewType": true,
+      "_type": "date",
+      "value": "2015-12-01T00:00:00.000Z"
+    },
+    "Property Index": {
+      "zip": {
+        "_default": "2",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "2"
+      }
+    },
+    "to": {
+      "_default": "2016-01-01T00:00:00.000Z",
+      "_viewType": true,
+      "_type": "date",
+      "value": "2016-01-01T00:00:00.000Z"
+    },
+    "region": {
+      "_default": "\"*Dublin 1\"",
+      "_viewType": true,
+      "_type": "string",
+      "region": {
+        "_default": "*Dublin 1*",
+        "_viewType": true,
+        "_type": "string",
+        "value": "*Dublin 1*"
+      },
+      "value": "\"*Dublin 1\""
+    },
+    "selected": {
+      "_default": "",
+      "_viewType": true,
+      "_type": "symbol",
+      "value": "",
+      "_rolling": false
+    },
+    ".settings": {
+      "component_10591": {
+        "GroupingConfiguration": [],
+        "version": 538
+      },
+      "component_4194": {
+        "version": 539
+      },
+      "component_3785": {
+        "version": 526
+      }
+    },
+    "BarCharts": {
+      "MaxHeartRate": {
+        "_viewType": true,
+        "_type": "float",
+        "_rolling": false,
+        "value": 181,
+        "_default": ""
+      },
+      "MaxAltitude": {
+        "_viewType": true,
+        "_type": "float",
+        "_rolling": false,
+        "value": 226.68451418623474,
+        "_default": ""
+      },
+      "MaxPace": {
+        "_viewType": true,
+        "_type": "float",
+        "_rolling": false,
+        "value": 4.619999999999891,
+        "_default": ""
+      },
+      "MaxDistance": {
+        "_viewType": true,
+        "_type": "float",
+        "value": 5006.52,
+        "_default": ""
+      },
+      "MaxTime": {
+        "_viewType": true,
+        "_type": "int",
+        "_rolling": false,
+        "value": 1492,
+        "_default": ""
+      },
+      "Padding": {
+        "_viewType": true,
+        "_type": "int",
+        "_rolling": false,
+        "value": 20,
+        "_default": 20
+      },
+      "Gridline Opacity": {
+        "_viewType": true,
+        "_type": "int",
+        "_rolling": false,
+        "value": 25,
+        "_default": 25
+      }
+    },
+    "SelectedSport": {
+      "_default": "Running",
+      "_viewType": true,
+      "_type": "symbol",
+      "value": "Running"
+    },
+    "exerciseA": {
+      "_viewType": true,
+      "_type": "timestamp",
+      "value": "2021-01-26T18:22:12.000000000Z",
+      "_default": "2021-02-09T18:47:13.768000000Z"
+    },
+    "exerciseB": {
+      "_viewType": true,
+      "_type": "timestamp",
+      "value": "2021-02-04T21:30:59.000000000Z",
+      "_default": "2021-02-09T18:47:50.701000000Z"
+    },
+    "runTime": {
+      "_viewType": true,
+      "_type": "long",
+      "value": 298,
+      "_default": ""
+    },
+    "chartMin": {
+      "_viewType": true,
+      "_type": "long",
+      "_listtype": "symbol",
+      "value": "",
+      "_default": ""
+    },
+    "chartMax": {
+      "_viewType": true,
+      "_type": "long",
+      "value": "",
+      "_default": ""
+    }
+  },
+  "data": {
+    "Run Demo": {
+      "Steps": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Steps",
+          "Type"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Steps",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          },
+          "value": "Type"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "flip `Steps`Type!(11000 9000;`Goal`Remaining)",
+        "_queryParams": [],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Run Data": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Time",
+          "LatitudeDegrees",
+          "LongitudeDegrees",
+          "AltitudeMeters",
+          "DistanceMeters",
+          "HeartRate",
+          "Weight",
+          "Seconds",
+          "Pace",
+          "Speed",
+          "MinHeartTarget",
+          "MaxHeartTarget",
+          "StartTime"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Time",
+          "mappings": {},
+          "value": "LatitudeDegrees"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "select from Rundata",
+        "_queryParams": [],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Calories": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Calories",
+          "Type"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Calories",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          },
+          "value": "Type"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "flip `Calories`Type!(430 1760;`CaloriesBurnt`Remaining)\n",
+        "_queryParams": [],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Get Aggregates": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Key",
+          "Value",
+          "avgAltitudeMeters",
+          "maxAltitudeMeters",
+          "minAltitudeMeters",
+          "avgDistanceMeters",
+          "maxDistanceMeters",
+          "minDistanceMeters",
+          "avgHeartRate",
+          "maxHeartRate",
+          "minHeartRate",
+          "avgPace",
+          "maxPace",
+          "minPace",
+          "avgSeconds",
+          "maxSeconds",
+          "minSeconds",
+          "formattedTime"
+        ],
+        "_dataType": "virtual",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_maxRows": 2000,
+        "_pageSize": 2000,
+        "_serverPaging": false,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "weight": 2.6519337016574585,
+            "isExpanded": true
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 0,
+            "isExpanded": true
+          },
+          {
+            "weight": 1.3480662983425415,
+            "isExpanded": true
+          }
+        ],
+        "_subscriptionKey": "_rowIndex",
+        "_virtualParams": [
+          {
+            "name": "source",
+            "index": 0,
+            "type": "datasource",
+            "value": "Run Demo/Run Data",
+            "isVirtual": true
+          }
+        ],
+        "_virtualQueryString": "function (source, callback) {\n\t\n\tvar aggRows = [],\n\t\t\taggs = {'Key': 'all'},\n\t    cols = ['AltitudeMeters', 'DistanceMeters', 'HeartRate', 'Pace', 'Seconds'],\n\t\t\tcolumns = ['Key', 'Value'],\n\t    fns = ['avg', 'max', 'min'],\n\t    max = {},\n\t\t\tmeta = {\n\t        'Key': 9,\n\t        'Value': 11\n\t    };\n\t\n\t\taggRows.push(aggs);\n\n\t\t_.each(cols, function(col) {\n\t\t    var agg,\n\t\t\tdata = _.map(source.rows, col);\n\n\t\t\t_.each(fns, function(fn) {\n\t\t\t    switch (fn) {\n\t\t\t\t    case 'avg':\n\t\t\t\t\t\tagg = Math.floor(_.mean(data));\n\t\t\t\t\t\tbreak;\n\t\t\t\t\tcase 'max':\n\t\t\t\t\t\tagg = _.max(data);\n\t\t\t\t\t\tbreak;\n\t\t\t\t\tcase 'min':\n\t\t\t\t\t\t agg = _.min(data);\n\t\t\t\t\t\tbreak;\n\t\t\t\t}\n\n\t\t\t\tagg = agg || 0;\n\n\t\t\t\taggRows.push({\n\t\t\t\t\t'Key': fn + col,\n\t\t\t\t\t'Value': agg\n\t\t\t\t});\n\t\t\t\t\n\t\t\t\taggs[fn + col] = agg;\n\t\t\t\tcolumns.push(fn + col);\n\t\t\t\tmeta[fn + col] = 11;\n\t\t\t});\n\t\t});\n\t\n\t// format time\n\taggs.formattedTime = Tools.convertValueToDuration(aggRows[0].maxSeconds * 1000).format('mm:ss');\n\tcolumns.push('formattedTime');\n\tmeta.formattedTime = 9;\n\n\tcallback({\n\t    meta: meta,\n\t    columns: columns,\n\t    rows: aggRows\n\t});\n}",
+        "_mappings": {
+          "key": "Key",
+          "value": "Value",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          }
+        }
+      },
+      "Point in Time": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Time",
+          "LatitudeDegrees",
+          "LongitudeDegrees",
+          "AltitudeMeters",
+          "DistanceMeters",
+          "HeartRate",
+          "Weight",
+          "Seconds",
+          "Pace",
+          "Speed",
+          "MinHeartTarget",
+          "MaxHeartTarget"
+        ],
+        "_dataType": "virtual",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_maxRows": 2000,
+        "_pageSize": 2000,
+        "_serverPaging": false,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "weight": 2.5582655826558267,
+            "isExpanded": true
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 0,
+            "isExpanded": true
+          },
+          {
+            "weight": 1.4417344173441735,
+            "isExpanded": true
+          }
+        ],
+        "_subscriptionKey": "_rowIndex",
+        "_virtualParams": [
+          {
+            "type": "datasource",
+            "name": "source",
+            "value": "Run Demo/Run Data",
+            "index": 0,
+            "isVirtual": true
+          },
+          {
+            "name": "selected",
+            "index": 1,
+            "type": "viewstate",
+            "value": "Run/Sate",
+            "isVirtual": true
+          }
+        ],
+        "_virtualQueryString": "function (source, selected,  callback) {\n\t\n\tvar selectedRow = {\n\t\t\tTime: Tools.convertISODatetimeToKDBLikeObject(selected)\n\t\t},\n\t\tindex = _.sortedIndexBy(source.rows, selectedRow, function (row) {\n\t\t\treturn row.Time.i;\n\t});\n\t  \n    callback({\n\t\tmeta: source.meta,\n\t\tcolumns: source.columns,\n\t\trows: [source.rows[index] || {}]\n\t});\n\n}"
+      },
+      "Start Times": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Date",
+          "StartTime"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Date",
+          "mappings": {},
+          "value": "StartTime"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "{[sport]\r\n  times:distinct exec StartTime from Rundata where Sport=sport;\r\n  flip(`Date`StartTime)!((\"d\"$times);times)\r\n  }",
+        "_queryParams": [
+          {
+            "name": "sport",
+            "index": 0,
+            "type": "symbol",
+            "value": "<%SelectedSport%>",
+            "IsKdbParam": true,
+            "isViewState": true
+          }
+        ],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Sports": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Sport"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Sport",
+          "mappings": {},
+          "value": ""
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "distinct select Sport from Rundata",
+        "_queryParams": [],
+        "_subscriptionKey": "_rowIndex",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Rundata B": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Time",
+          "LatitudeDegrees",
+          "LongitudeDegrees",
+          "AltitudeMeters",
+          "DistanceMeters",
+          "HeartRate",
+          "Weight",
+          "Seconds",
+          "Pace",
+          "Speed",
+          "MinHeartTarget",
+          "MaxHeartTarget",
+          "StartTime",
+          "Sport"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Time",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          },
+          "value": "LatitudeDegrees"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "{[start]\r\n  select from Rundata where StartTime=start\r\n  }",
+        "_queryParams": [
+          {
+            "name": "start",
+            "index": 0,
+            "type": "timestamp",
+            "value": "<%exerciseB%>",
+            "IsKdbParam": true,
+            "isViewState": true
+          }
+        ],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Rundata A": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Time",
+          "LatitudeDegrees",
+          "LongitudeDegrees",
+          "AltitudeMeters",
+          "DistanceMeters",
+          "HeartRate",
+          "Weight",
+          "Seconds",
+          "Pace",
+          "Speed",
+          "MinHeartTarget",
+          "MaxHeartTarget",
+          "StartTime",
+          "Sport"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Time",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          },
+          "value": "LatitudeDegrees"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "{[start]\r\n  select from Rundata where StartTime=start\r\n  }",
+        "_queryParams": [
+          {
+            "name": "start",
+            "index": 0,
+            "type": "timestamp",
+            "value": "<%exerciseA%>",
+            "IsKdbParam": true,
+            "isViewState": true
+          }
+        ],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "map A B": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Time",
+          "LatitudeDegrees",
+          "LongitudeDegrees",
+          "AltitudeMeters",
+          "DistanceMeters",
+          "HeartRate",
+          "Weight",
+          "Seconds",
+          "Pace",
+          "Speed",
+          "MinHeartTarget",
+          "MaxHeartTarget",
+          "StartTime",
+          "Sport"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Time",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          },
+          "value": "LatitudeDegrees"
+        },
+        "_maxRows": "5000",
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "{[startA;startB]\r\n  select from Rundata where StartTime in(startA;startB)\r\n  }",
+        "_queryParams": [
+          {
+            "name": "startA",
+            "index": 0,
+            "type": "timestamp",
+            "value": "<%exerciseA%>",
+            "IsKdbParam": true,
+            "isViewState": true
+          },
+          {
+            "name": "startB",
+            "index": 1,
+            "type": "timestamp",
+            "value": "<%exerciseB%>",
+            "IsKdbParam": true,
+            "isViewState": true
+          }
+        ],
+        "_subscriptionKey": "_rowIndex",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      }
+    }
+  },
+  "worksheetPadding": 10,
+  "widgetsSpacing": 0,
+  "borderColor": "000000",
+  "borderBackground": "ffffff",
+  "transparentBackground": true,
+  "borderWidth": 0,
+  "borderRounding": 0,
+  "borderSpacing": 0,
+  "borderShadow": false,
+  "enableShareDashboard": false,
+  "notifications": {
+    "Notifications": {
+      "_Version": "4.2.0s2",
+      "Enabled": true,
+      "InBrowserNotifications": false,
+      "Position": "Bottom Right",
+      "MaxVisibleCount": 3,
+      "FadeOut": 5,
+      "Icon": "bell-o",
+      "Sound": "beep",
+      "SoundVolume": 100,
+      "Grouping": false,
+      "GroupingInterval": 1,
+      "triggers": []
+    }
+  },
+  "showLoadingIndicators": true,
+  "unsavedViewerPrompt": false,
+  "advancedCss": "",
+  "cssClasses": "",
+  "viewStateBinding": false,
+  "widgets": [],
+  "wasChanged": true,
+  "action": "replace",
+  "version": "4.4.0p7"
+}
