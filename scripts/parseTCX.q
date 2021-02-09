@@ -3,7 +3,7 @@
 \d .aa
 
 // High number of significant figures in AltitudeMeters column
-\P 20
+\P 16
 
 //
 // @desc Parses a TCX file into a kdb+ table. Columns are then modified to match that used in 
@@ -21,8 +21,9 @@ transformTCX:{[fName]
     startTime:.aa.parseStringToTS first parsedFile0`Id;
 
     tab:delete diffDist,diffTime from
-        update Speed:diffDist%("j"$diffTime)%1000000000 from
+        .eoh.tab:update Speed:diffDist%("j"$diffTime)%1000000000 from
         update diffTime:deltas Time,diffDist:deltas DistanceMeters,Seconds:("j"$Time-startTime)%1000000000 from
+        update DistanceMeters:maxs DistanceMeters from
         delete HeartRateBpm,Position from
         update "F"$AltitudeMeters,
         "F"$DistanceMeters,
@@ -33,7 +34,8 @@ transformTCX:{[fName]
         Weight:0, //~ Dummy value
         MinHeartTarget:90,
         MaxHeartTarget:175,
-        StartTime:startTime
+        StartTime:startTime,
+        Sport:`$-1_ 1_ "\"" vs first parsedFile0`Sport
         from first value first(parsedFile0`Lap)`Track;
     
     `Time`LatitudeDegrees`LongitudeDegrees`AltitudeMeters`DistanceMeters`HeartRate`Weight`Seconds`Pace`Speed`MinHeartTarget`MaxHeartTarget xcols 
